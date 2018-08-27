@@ -1,0 +1,160 @@
+[27-Aug-2018 02:38:18 UTC] PHP Fatal error:  Class 'PSE' not found in /home/ubuntu/workspace/php/procesarpago.php on line 5
+[27-Aug-2018 02:38:18 UTC] PHP Stack trace:
+[27-Aug-2018 02:38:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 03:28:20 UTC] PHP Fatal error:  Class 'PSE' not found in /home/ubuntu/workspace/php/procesarpago.php on line 5
+[27-Aug-2018 03:28:20 UTC] PHP Stack trace:
+[27-Aug-2018 03:28:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 03:29:10 UTC] PHP Warning:  Missing argument 14 for PSE::PSETransactionRequest(), called in /home/ubuntu/workspace/php/procesarpago.php on line 23 and defined in /home/ubuntu/workspace/php/pago.php on line 58
+[27-Aug-2018 03:29:10 UTC] PHP Stack trace:
+[27-Aug-2018 03:29:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 03:29:10 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 03:29:10 UTC] PHP Warning:  Missing argument 15 for PSE::PSETransactionRequest(), called in /home/ubuntu/workspace/php/procesarpago.php on line 23 and defined in /home/ubuntu/workspace/php/pago.php on line 58
+[27-Aug-2018 03:29:10 UTC] PHP Stack trace:
+[27-Aug-2018 03:29:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 03:29:10 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 03:29:10 UTC] PHP Warning:  Missing argument 16 for PSE::PSETransactionRequest(), called in /home/ubuntu/workspace/php/procesarpago.php on line 23 and defined in /home/ubuntu/workspace/php/pago.php on line 58
+[27-Aug-2018 03:29:10 UTC] PHP Stack trace:
+[27-Aug-2018 03:29:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 03:29:10 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 03:29:10 UTC] PHP Warning:  Missing argument 17 for PSE::PSETransactionRequest(), called in /home/ubuntu/workspace/php/procesarpago.php on line 23 and defined in /home/ubuntu/workspace/php/pago.php on line 59
+[27-Aug-2018 03:29:10 UTC] PHP Stack trace:
+[27-Aug-2018 03:29:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 03:29:10 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 03:29:10 UTC] PHP Fatal error:  SoapClient::SoapClient(): 'location' and 'uri' options are required in nonWSDL mode in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 03:32:38 UTC] PHP Warning:  Missing argument 14 for PSE::PSETransactionRequest(), called in /home/ubuntu/workspace/php/procesarpago.php on line 23 and defined in /home/ubuntu/workspace/php/pago.php on line 58
+[27-Aug-2018 03:32:38 UTC] PHP Stack trace:
+[27-Aug-2018 03:32:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 03:32:38 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 03:32:38 UTC] PHP Warning:  Missing argument 15 for PSE::PSETransactionRequest(), called in /home/ubuntu/workspace/php/procesarpago.php on line 23 and defined in /home/ubuntu/workspace/php/pago.php on line 58
+[27-Aug-2018 03:32:38 UTC] PHP Stack trace:
+[27-Aug-2018 03:32:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 03:32:38 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 03:32:38 UTC] PHP Warning:  Missing argument 16 for PSE::PSETransactionRequest(), called in /home/ubuntu/workspace/php/procesarpago.php on line 23 and defined in /home/ubuntu/workspace/php/pago.php on line 58
+[27-Aug-2018 03:32:38 UTC] PHP Stack trace:
+[27-Aug-2018 03:32:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 03:32:38 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 03:32:38 UTC] PHP Warning:  Missing argument 17 for PSE::PSETransactionRequest(), called in /home/ubuntu/workspace/php/procesarpago.php on line 23 and defined in /home/ubuntu/workspace/php/pago.php on line 59
+[27-Aug-2018 03:32:38 UTC] PHP Stack trace:
+[27-Aug-2018 03:32:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 03:32:38 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 03:32:38 UTC] PHP Fatal error:  SoapClient::SoapClient(): 'location' and 'uri' options are required in nonWSDL mode in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 03:36:11 UTC] PHP Fatal error:  SoapClient::SoapClient(): 'location' and 'uri' options are required in nonWSDL mode in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 03:58:01 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/ubuntu/workspace/php/procesarpago.php on line 26
+[27-Aug-2018 03:58:01 UTC] PHP Stack trace:
+[27-Aug-2018 03:58:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 04:34:01 UTC] PHP Warning:  Missing argument 17 for PSE::PSETransactionRequest(), called in /home/ubuntu/workspace/php/procesarpago.php on line 22 and defined in /home/ubuntu/workspace/php/pago.php on line 59
+[27-Aug-2018 04:34:01 UTC] PHP Stack trace:
+[27-Aug-2018 04:34:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 04:34:01 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:22
+[27-Aug-2018 04:34:51 UTC] PHP Warning:  Missing argument 17 for PSE::PSETransactionRequest(), called in /home/ubuntu/workspace/php/procesarpago.php on line 22 and defined in /home/ubuntu/workspace/php/pago.php on line 59
+[27-Aug-2018 04:34:51 UTC] PHP Stack trace:
+[27-Aug-2018 04:34:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 04:34:51 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:22
+[27-Aug-2018 04:35:31 UTC] PHP Warning:  Missing argument 17 for PSE::PSETransactionRequest(), called in /home/ubuntu/workspace/php/procesarpago.php on line 22 and defined in /home/ubuntu/workspace/php/pago.php on line 59
+[27-Aug-2018 04:35:31 UTC] PHP Stack trace:
+[27-Aug-2018 04:35:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 04:35:31 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:22
+[27-Aug-2018 05:02:46 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:02:46 UTC] PHP Stack trace:
+[27-Aug-2018 05:02:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:02:46 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:04:56 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:04:56 UTC] PHP Stack trace:
+[27-Aug-2018 05:04:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:04:56 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:05:10 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:05:10 UTC] PHP Stack trace:
+[27-Aug-2018 05:05:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:05:10 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:05:40 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:05:40 UTC] PHP Stack trace:
+[27-Aug-2018 05:05:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:05:40 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:06:25 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:06:25 UTC] PHP Stack trace:
+[27-Aug-2018 05:06:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:06:25 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:07:05 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:07:05 UTC] PHP Stack trace:
+[27-Aug-2018 05:07:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:07:05 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:08:34 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:08:34 UTC] PHP Stack trace:
+[27-Aug-2018 05:08:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:08:34 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:11:04 UTC] PHP Fatal error:  Call to a member function PSETransactionRequest() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:11:04 UTC] PHP Stack trace:
+[27-Aug-2018 05:11:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:11:04 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:11:55 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:11:55 UTC] PHP Stack trace:
+[27-Aug-2018 05:11:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:11:55 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:13:16 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:13:16 UTC] PHP Stack trace:
+[27-Aug-2018 05:13:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:13:16 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:14:35 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:14:35 UTC] PHP Stack trace:
+[27-Aug-2018 05:14:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:14:35 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:15:31 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:15:31 UTC] PHP Stack trace:
+[27-Aug-2018 05:15:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:15:31 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:15:55 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:15:55 UTC] PHP Stack trace:
+[27-Aug-2018 05:15:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:15:55 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:16:27 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:16:27 UTC] PHP Stack trace:
+[27-Aug-2018 05:16:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:16:27 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:17:35 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:17:35 UTC] PHP Stack trace:
+[27-Aug-2018 05:17:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:17:35 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:18:42 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:18:42 UTC] PHP Stack trace:
+[27-Aug-2018 05:18:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:18:42 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:18:46 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:18:46 UTC] PHP Stack trace:
+[27-Aug-2018 05:18:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:18:46 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:19:58 UTC] PHP Fatal error:  Call to a member function PSETransactionRequest() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:19:58 UTC] PHP Stack trace:
+[27-Aug-2018 05:19:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:19:58 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:20:09 UTC] PHP Fatal error:  Call to a member function PSETransactionRequest() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:20:09 UTC] PHP Stack trace:
+[27-Aug-2018 05:20:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:20:09 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:20:55 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:20:55 UTC] PHP Stack trace:
+[27-Aug-2018 05:20:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:20:55 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:25:21 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:25:21 UTC] PHP Stack trace:
+[27-Aug-2018 05:25:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:25:21 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:27:17 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:27:17 UTC] PHP Stack trace:
+[27-Aug-2018 05:27:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:27:17 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:28:54 UTC] PHP Fatal error:  Call to a member function createTransaction() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:28:54 UTC] PHP Stack trace:
+[27-Aug-2018 05:28:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:28:54 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:30:38 UTC] PHP Fatal error:  Call to a member function PSETransactionRequest() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:30:38 UTC] PHP Stack trace:
+[27-Aug-2018 05:30:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:30:38 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:33:56 UTC] PHP Fatal error:  Call to a member function PSETransactionRequest() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:33:56 UTC] PHP Stack trace:
+[27-Aug-2018 05:33:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:33:56 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
+[27-Aug-2018 05:34:34 UTC] PHP Fatal error:  Call to a member function PSETransactionRequest() on a non-object in /home/ubuntu/workspace/php/pago.php on line 84
+[27-Aug-2018 05:34:34 UTC] PHP Stack trace:
+[27-Aug-2018 05:34:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[27-Aug-2018 05:34:34 UTC] PHP   2. PSE->PSETransactionRequest() /home/ubuntu/workspace/php/procesarpago.php:23
