@@ -2,10 +2,9 @@
 session_start();
     require 'pago.php';
     
-    try {
-        $cxn = new PSE(include('conexion.php'));
-        
-        $payer = $cxn->createPerson(
+    $cnx = new cnx;
+    
+        $payer = $cnx->createPerson(
             $document = $_POST['id'],
             $documentType = $_POST['idtype'],
             $firstName = $_POST['fname'],
@@ -20,9 +19,12 @@ session_start();
             $mobile = $_POST['mobile']
             );
     
-        $response = $cxn ->PSETransactionRequest(1022,0,'https://egm-mde-sop-svr.egm.local/',uniqid(),'prueba','ES','COP',1000,0,0,0,$payer,$payer,$payer,$ipAddress,$userAgent,$additionalData);
+        $transaccion = $cnx ->PSETransactionRequest(1022,0,'https://pruebaplacetopay-karloz837.c9users.io/procesarpago.php',uniqid(),'Transaccion de prueba','ES','COP',1000,0,0,0,$payer,$payer,$payer,$ipAddress,$userAgent,$additionalData);
     
- } catch (Exception $e) {
+       /* $peticionbanco = $cxn->PSETransactionRequest ('1022','0', 'http://prueba-jakcson115.c9.io/PlacetoPay/respuestaTX.php', uniqid(), 
+                                'PruebaPSE', 'ES', 'COP', 10000, 0, 0, 0, $payer, '192.168.185.1', $_SERVER['HTTP_USER_AGENT']);
+                                */
+header('Location:'.$transaccion); 
+    var_dump($transaccion); $transaccion;
 	print ' NO FUNCIONA : ' . $e->getMessage() . PHP_EOL;
 
-};
