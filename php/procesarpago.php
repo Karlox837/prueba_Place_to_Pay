@@ -1,6 +1,4 @@
 <?php
-//require_once 'authData.php';
-//require_once('/lib/nusoap.php');
 
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
@@ -17,13 +15,15 @@ $currency = $_POST["currency"];
 try {
     $webservice = new SoapClient('https://test.placetopay.com/redirection/soap/redirect?wsdl');
     $webservice->__setLocation('https://test.placetopay.com/redirection/soap/redirect');
-
+/* 
     $login = '6dd490faf9cb87a9862245da41170ff2';
 	$tranKey = '024h1IlD';
 	$Nonce = '125454678asw';
 	$Created= date('c');
     $PasswordDigest = base64_encode(sha1($Nonce . $Created . $tranKey, true));
+*/
 
+	autenticathe();
 
 
     $UsernameToken = new stdClass();

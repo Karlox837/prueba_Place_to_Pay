@@ -1,14 +1,15 @@
 <?php
-require_once 'authData.php';
 
+public function autenticathe(){
 
-class autenticacion {
-    const WSU = 'http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd';
-    const WSSE = 'http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd';
+    $login = '6dd490faf9cb87a9862245da41170ff2';
+    $tranKey = '024h1IlD';
+    $Nonce = '125454678asw';
+    $Created= date('c');
+    $PasswordDigest = base64_encode(sha1($Nonce . $Created . $tranKey, true));
 
-    
-
-}
+    return autenticathe;
+};
 
 
 
