@@ -1,6 +1,6 @@
 <?php
 //require_once 'authData.php';
-require_once('/lib/nusoap.php');
+//require_once('/lib/nusoap.php');
 
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
