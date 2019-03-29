@@ -26,7 +26,7 @@ class PSE {
     
     protected function getSoapClient()
     {
-        $wsdl = new SoapClient('https://test.placetopay.com/soap/pse/?wsdl', array(
+        $wsdl = new SoapClient('https://test.placetopay.com/redirection/', array(
                             	'trace' => true,
                 				'exceptions' => true,));
 		 return $wsdl;

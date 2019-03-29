@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <h2>Formulario de pago PSE</h2>
 <p>Juan Carlos Cano Prueba Agosto 27 de 2018.</p>
 <div class="row">
@@ -18,10 +17,10 @@
         <div class="row">
           <div class="col-50">
             <h3>informacion del Pagador</h3>
-            <label for="fname"><i class="fa fa-user"></i>Nombre</label>
-            <input type="text" id="fname" name="firstname" placeholder="Andres">
+            <label for="name"><i class="fa fa-user"></i>Nombre</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Andres">
             <label for="lname"><i class="fa fa-user"></i>Apellido</label>
-            <input type="text" id="lname" name="lastname" placeholder="Restrepo">
+            <input type="text" id="lastname" name="lastname" placeholder="Restrepo">
             <label for="idtype"><i class="fa fa-id-card" aria-hidden="true"></i>Tipo de identificacion</label>
             <select name="idtype">
                 <option value="CC">Cedula de Ciudadania</option>
@@ -55,6 +54,8 @@
             <input type="number" id="phone" name="phone" placeholder="233 33 33">
             <label for="mobile"><i class="fa fa-mobile" aria-hidden="true"></i>Telefono celular</label>
             <input type="number" id="mobile" name="mobile" placeholder="312 234 54 54">
+            <label for="valor"><i class="fa fa-money" aria-hidden="true"></i>Valor a pagar</label>
+            <input type="number" id="valor" name="valor" >
             </div>
 <!--
           <div class="col-50">

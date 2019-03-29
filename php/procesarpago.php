@@ -1,30 +1,78 @@
 <?php
-session_start();
-    require 'pago.php';
+//require_once 'authData.php';
+require_once('/lib/nusoap.php');
+
+$firstname = $_POST["firstname"];
+$lastname = $_POST["lastname"];
+$idtype = $_POST["idtype"];
+$id = $_POST["id"];
+$compay = $_POST["compay"];
+$email = $_POST["email"];
+$mobile = $_POST["mobile"];
+$adress = $_POST["address"];
+$total = $_POST["valor"];
+
+
+try {
+    $webservice = new SoapClient('https://test.placetopay.com/redirection/soap/redirect?wsdl');
+    $webservice->__setLocation('https://test.placetopay.com/redirection/soap/redirect');
+
+    $login = '6dd490faf9cb87a9862245da41170ff2';
+	$tranKey = '024h1IlD';
+	$Nonce = 'Randomword';
+	$Created= date('c');
+    $PasswordDigest = base64_encode(sha1($Nonce . $Created . $tranKey, true));
     
-    $cnx = new cnx;
-    
-        $payer = $cnx->createPerson(
-            $document = $_POST['id'],
-            $documentType = $_POST['idtype'],
-            $firstName = $_POST['fname'],
-            $lastName = $_POST['lname'],
-            $company = $_POST['company'],
-            $emailAddress = $_POST['email'],
-            $address = $_POST['address'] ,
-            $city = $_POST['city'],
-            $province = $_POST['province'],
-            $country = $_POST['country'],
-            $phone = $_POST['phone'],
-            $mobile = $_POST['mobile']
-            );
-    
-        $transaccion = $cnx ->PSETransactionRequest(1022,0,'https://pruebaplacetopay-karloz837.c9users.io/procesarpago.php',uniqid(),'Transaccion de prueba','ES','COP',1000,0,0,0,$payer,$payer,$payer,$ipAddress,$userAgent,$additionalData);
-    
-       /* $peticionbanco = $cxn->PSETransactionRequest ('1022','0', 'http://prueba-jakcson115.c9.io/PlacetoPay/respuestaTX.php', uniqid(), 
-                                'PruebaPSE', 'ES', 'COP', 10000, 0, 0, 0, $payer, '192.168.185.1', $_SERVER['HTTP_USER_AGENT']);
-                                */
-header('Location:'.$transaccion); 
-    var_dump($transaccion); $transaccion;
-	print ' NO FUNCIONA : ' . $e->getMessage() . PHP_EOL;
+        $buyer = new stdClass();
+		$buyer->documentType = $idtype;
+		$buyer->document = $id;
+		$buyer->name = $firstname;
+		$buyer->surname = $lastname; 
+		$buyer->company= $compay;
+		$buyer->email= $email;
+		$buyer->address=$adress;
+        $buyer->mobile= $mobile;
+        
+        $Amount = new stdClass();
+		$Amount->currency='CO';
+        $Amount->total=$total;
+        
+        $PaymentRequest = new stdClass();
+		$PaymentRequest->reference=uniqid();
+		$PaymentRequest->description='prueba';
+		$PaymentRequest->amount=$Amount;
+        $PaymentRequest->allowPartial=FALSE;
+        
+        $RedirectRequest = new stdClass();
+		$RedirectRequest->locale='es_CO';
+		$RedirectRequest->buyer=$buyer;
+        $RedirectRequest->payment=$PaymentRequest; 
+        $RedirectRequest->expiration='2019-05-29T21:24:25-05:00';
+		$RedirectRequest->returnUrl='http://prueba-jakcson115.c9users.io/P2P-NewRedirec/index.php';
+		$RedirectRequest->cancelUrl='http://prueba-jakcson115.c9users.io/P2P-NewRedirec/index.php';
+		$RedirectRequest->ipAddress='127.0.0.1';
+		$RedirectRequest->userAgent='Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.89 Safari\/537.36';
+        
+        $security = new stdClass();
+		$security->UsernameToken = new SoapVar($UsernameToken, SOAP_ENC_OBJECT, NULL, 'http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd', 'UsernameToken', 'http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd');
+        $header = new SoapHeader('http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd', 'Security', $security, true);
+        
+        $parameters = new stdClass();
+		$parameters->payload = $RedirectRequest;
+		$webservice->__setSoapHeaders($header);
+        $response = $webservice->createRequest($parameters);
+        
+        header('location: ' . $response->createRequestResult->processUrl);
+		print_r($response);
+        
+
+
+}catch (SoapFault $e) {
+	print_r($e);
+	echo "error 1";
+}
+
+
+
+
 
