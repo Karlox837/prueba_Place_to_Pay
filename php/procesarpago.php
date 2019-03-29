@@ -11,6 +11,7 @@ $email = $_POST["email"];
 $mobile = $_POST["mobile"];
 $adress = $_POST["address"];
 $total = $_POST["valor"];
+$currency = $_POST["currency"];
 
 
 try {
@@ -19,9 +20,18 @@ try {
 
     $login = '6dd490faf9cb87a9862245da41170ff2';
 	$tranKey = '024h1IlD';
-	$Nonce = 'Randomword';
+	$Nonce = '125454678asw';
 	$Created= date('c');
     $PasswordDigest = base64_encode(sha1($Nonce . $Created . $tranKey, true));
+
+
+
+    $UsernameToken = new stdClass();
+    $UsernameToken->Username = $login;
+    $UsernameToken->Password = $PasswordDigest;
+    $UsernameToken->Nonce =base64_encode($Nonce);
+    $UsernameToken->Created = $Created;
+
     
         $buyer = new stdClass();
 		$buyer->documentType = $idtype;
@@ -34,7 +44,7 @@ try {
         $buyer->mobile= $mobile;
         
         $Amount = new stdClass();
-		$Amount->currency='CO';
+		$Amount->currency=$currency;
         $Amount->total=$total;
         
         $PaymentRequest = new stdClass();
@@ -48,8 +58,8 @@ try {
 		$RedirectRequest->buyer=$buyer;
         $RedirectRequest->payment=$PaymentRequest; 
         $RedirectRequest->expiration='2019-05-29T21:24:25-05:00';
-		$RedirectRequest->returnUrl='http://prueba-jakcson115.c9users.io/P2P-NewRedirec/index.php';
-		$RedirectRequest->cancelUrl='http://prueba-jakcson115.c9users.io/P2P-NewRedirec/index.php';
+		$RedirectRequest->returnUrl='http://test.com';
+		$RedirectRequest->cancelUrl='http://test.com';
 		$RedirectRequest->ipAddress='127.0.0.1';
 		$RedirectRequest->userAgent='Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.89 Safari\/537.36';
         

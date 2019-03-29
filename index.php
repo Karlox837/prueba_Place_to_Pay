@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h2>Formulario de pago PSE</h2>
-<p>Juan Carlos Cano Prueba Agosto 27 de 2018.</p>
+<h2>Ingeniero Integrador</h2>
+<p>Juan Carlos Cano Echeverri.</p>
 <div class="row">
   <div class="col-75">
     <div class="container">
@@ -54,8 +54,19 @@
             <input type="number" id="phone" name="phone" placeholder="233 33 33">
             <label for="mobile"><i class="fa fa-mobile" aria-hidden="true"></i>Telefono celular</label>
             <input type="number" id="mobile" name="mobile" placeholder="312 234 54 54">
-            <label for="valor"><i class="fa fa-money" aria-hidden="true"></i>Valor a pagar</label>
-            <input type="number" id="valor" name="valor" >
+            <div class ="row">
+              <div class ="col-50">
+                <label for="currency"><i class="fa fa-id-card" aria-hidden="true"></i>Tipo de Moneda</label>
+                <select name="currency">
+                    <option value="COP">Pesos Colombianos</option>
+                    <option value="USD">Dolares</option>
+                </select>
+              </div>
+              <div class="col-50">
+                <label for="valor"><i class="fa fa-money" aria-hidden="true"></i>Valor a pagar</label>
+                <input type="number" id="valor" name="valor" >
+              </div>
+            </div>
             </div>
 <!--
           <div class="col-50">
