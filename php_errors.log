@@ -305,3 +305,54 @@
 [29-Aug-2018 01:11:12 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/ubuntu/workspace/php/pago.php on line 50
 [29-Aug-2018 01:21:58 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/ubuntu/workspace/php/pago.php on line 50
 [27-Mar-2019 23:44:47 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/ubuntu/workspace/php/pago.php on line 50
+[29-Mar-2019 23:07:17 UTC] PHP Warning:  require_once(/lib/nusoap.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/php/procesarpago.php on line 3
+[29-Mar-2019 23:07:17 UTC] PHP Stack trace:
+[29-Mar-2019 23:07:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[29-Mar-2019 23:07:17 UTC] PHP Fatal error:  require_once(): Failed opening required '/lib/nusoap.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/php/procesarpago.php on line 3
+[29-Mar-2019 23:07:17 UTC] PHP Stack trace:
+[29-Mar-2019 23:07:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[29-Mar-2019 23:50:02 UTC] PHP Fatal error:  Call to undefined function autenticathe() in /home/ubuntu/workspace/php/procesarpago.php on line 26
+[29-Mar-2019 23:50:02 UTC] PHP Stack trace:
+[29-Mar-2019 23:50:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[29-Mar-2019 23:52:09 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/ubuntu/workspace/php/config.php on line 3
+[29-Mar-2019 23:52:09 UTC] PHP Stack trace:
+[29-Mar-2019 23:52:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[29-Mar-2019 23:55:13 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/ubuntu/workspace/php/procesarpago.php on line 28
+[29-Mar-2019 23:55:28 UTC] PHP Parse error:  syntax error, unexpected 'autenticathe' (T_STRING), expecting '(' in /home/ubuntu/workspace/php/procesarpago.php on line 28
+[29-Mar-2019 23:55:53 UTC] PHP Fatal error:  Cannot redeclare autenticathe() (previously declared in /home/ubuntu/workspace/php/config.php:3) in /home/ubuntu/workspace/php/procesarpago.php on line 28
+[29-Mar-2019 23:55:53 UTC] PHP Stack trace:
+[29-Mar-2019 23:55:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[30-Mar-2019 00:28:08 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/ubuntu/workspace/php/procesarpago.php on line 39
+[30-Mar-2019 00:28:23 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/ubuntu/workspace/php/procesarpago.php on line 39
+[30-Mar-2019 00:28:28 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/ubuntu/workspace/php/procesarpago.php on line 39
+[30-Mar-2019 00:52:54 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/php/procesarpago.php on line 40
+[30-Mar-2019 00:53:10 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/php/procesarpago.php on line 40
+[30-Mar-2019 00:53:15 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/php/procesarpago.php on line 40
+[30-Mar-2019 00:53:36 UTC] PHP Parse error:  syntax error, unexpected '$buyer' (T_VARIABLE) in /home/ubuntu/workspace/php/procesarpago.php on line 41
+[30-Mar-2019 00:54:19 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/ubuntu/workspace/php/class.php on line 3
+[30-Mar-2019 00:54:19 UTC] PHP Stack trace:
+[30-Mar-2019 00:54:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[30-Mar-2019 00:55:01 UTC] PHP Fatal error:  Call to undefined method stdClass::createBuyer() in /home/ubuntu/workspace/php/procesarpago.php on line 41
+[30-Mar-2019 00:55:01 UTC] PHP Stack trace:
+[30-Mar-2019 00:55:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[30-Mar-2019 00:55:33 UTC] PHP Fatal error:  Call to a member function createBuyer() on a non-object in /home/ubuntu/workspace/php/procesarpago.php on line 41
+[30-Mar-2019 00:55:33 UTC] PHP Stack trace:
+[30-Mar-2019 00:55:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[30-Mar-2019 00:57:47 UTC] PHP Fatal error:  Call to a member function createBuyer() on a non-object in /home/ubuntu/workspace/php/procesarpago.php on line 41
+[30-Mar-2019 00:57:47 UTC] PHP Stack trace:
+[30-Mar-2019 00:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[30-Mar-2019 00:57:50 UTC] PHP Fatal error:  Call to a member function createBuyer() on a non-object in /home/ubuntu/workspace/php/procesarpago.php on line 41
+[30-Mar-2019 00:57:50 UTC] PHP Stack trace:
+[30-Mar-2019 00:57:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[30-Mar-2019 00:58:26 UTC] PHP Fatal error:  Call to a member function createBuyer() on a non-object in /home/ubuntu/workspace/php/procesarpago.php on line 41
+[30-Mar-2019 00:58:26 UTC] PHP Stack trace:
+[30-Mar-2019 00:58:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[30-Mar-2019 00:58:29 UTC] PHP Fatal error:  Call to a member function createBuyer() on a non-object in /home/ubuntu/workspace/php/procesarpago.php on line 41
+[30-Mar-2019 00:58:29 UTC] PHP Stack trace:
+[30-Mar-2019 00:58:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[30-Mar-2019 00:59:13 UTC] PHP Fatal error:  Call to a member function createBuyer() on a non-object in /home/ubuntu/workspace/php/procesarpago.php on line 41
+[30-Mar-2019 00:59:13 UTC] PHP Stack trace:
+[30-Mar-2019 00:59:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0
+[30-Mar-2019 00:59:17 UTC] PHP Fatal error:  Call to a member function createBuyer() on a non-object in /home/ubuntu/workspace/php/procesarpago.php on line 41
+[30-Mar-2019 00:59:17 UTC] PHP Stack trace:
+[30-Mar-2019 00:59:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/procesarpago.php:0

@@ -1,5 +1,8 @@
 <?php
 
+require_once 'config.php';
+require_once 'class.php';
+
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
 $idtype = $_POST["idtype"];
@@ -15,34 +18,15 @@ $currency = $_POST["currency"];
 try {
     $webservice = new SoapClient('https://test.placetopay.com/redirection/soap/redirect?wsdl');
     $webservice->__setLocation('https://test.placetopay.com/redirection/soap/redirect');
-/* 
-    $login = '6dd490faf9cb87a9862245da41170ff2';
-	$tranKey = '024h1IlD';
-	$Nonce = '125454678asw';
-	$Created= date('c');
-    $PasswordDigest = base64_encode(sha1($Nonce . $Created . $tranKey, true));
-*/
 
-	autenticathe();
-
-
+	
     $UsernameToken = new stdClass();
     $UsernameToken->Username = $login;
     $UsernameToken->Password = $PasswordDigest;
     $UsernameToken->Nonce =base64_encode($Nonce);
     $UsernameToken->Created = $Created;
 
-    
-        $buyer = new stdClass();
-		$buyer->documentType = $idtype;
-		$buyer->document = $id;
-		$buyer->name = $firstname;
-		$buyer->surname = $lastname; 
-		$buyer->company= $compay;
-		$buyer->email= $email;
-		$buyer->address=$adress;
-        $buyer->mobile= $mobile;
-        
+		
         $Amount = new stdClass();
 		$Amount->currency=$currency;
         $Amount->total=$total;
