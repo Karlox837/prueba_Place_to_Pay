@@ -1,0 +1,24 @@
+Punto 3.
+-Autenticacion: Es la forma con la cual se identifica quien esta solicitado las peticiones y si es un origen seguro, existen muchos tipos de autenticacion, el mas comun, una pantalla de login en una aplicacion o disponistivo.
+
+-Suscripcion: Adquirir un servicio o producto con un periodo de renovacion determinado.
+
+-Instrument:
+
+-Token: Es una llave que tiene expiracion, es un protocolo de seguridad para limitar los periodos de conexion.
+
+-Pago mixto: Sirve para cancelar un pago con multiples opciones de pago, por ejemplo 50% efectivo 50% tarjeta de credito.
+
+-Login: Identificador unico para la autenticacion en una plataforma, dispositivo o sistema web.
+
+-TranKey: Codigo unico que brinda la pasarela de pagos para generar el seed o el nonce, con el fin de crear una conexion encriptada entre la pasarela de pagos y el comercio.
+
+-ProcessURL: Direcion electronica, para el procesamiento de los datos la que suministra el cliente.
+
+-ReturnURL: Direcion de respuesta que brinda el comercio, donde se enviara la respuesta de la transaccion.
+
+¿Para que usaría un pago recurrente?
+-Para generar cobros, dentro de ciertos periodos de tiempos estipulados dentro de la peticion que se enva a la pasarela de pagos.
+
+¿Para que usaria una suscripcion?
+-
